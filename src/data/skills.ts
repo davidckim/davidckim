@@ -18,7 +18,7 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     category: 'Infrastructure',
-    skills: ['AWS Lambda', 'DynamoDB', 'S3', 'Firebase', 'Serverless'],
+    skills: ['AWS Lambda', 'DynamoDB', 'S3', 'Firebase', 'Serverless', 'Vercel'],
   },
   {
     category: 'Tools',

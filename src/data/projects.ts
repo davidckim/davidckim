@@ -34,16 +34,16 @@ export const projects: Project[] = [
     ],
     links: { github: '#', demo: '#' },
   },
-  {
-    name: 'Blockchain Poker',
-    description:
-      'A multiplayer poker game where you connect a crypto wallet to play instead of making an account. Built partly to learn WalletConnect and partly because the idea seemed fun.',
-    stack: ['React', 'TypeScript', 'WalletConnect', 'Web3.js', 'Node.js'],
-    highlights: [
-      'Built the real-time game UI with multiplayer state management',
-      'Integrated WalletConnect v2 so players could connect any of 100+ supported wallets',
-      'Kept the crypto stuff out of the way so people who aren\'t into blockchain could just play poker',
-    ],
-    links: { github: '#' },
-  },
+  // {
+  //   name: 'Blockchain Poker',
+  //   description:
+  //     'A multiplayer poker game where you connect a crypto wallet to play instead of making an account. Built partly to learn WalletConnect and partly because the idea seemed fun.',
+  //   stack: ['React', 'TypeScript', 'WalletConnect', 'Web3.js', 'Node.js'],
+  //   highlights: [
+  //     'Built the real-time game UI with multiplayer state management',
+  //     'Integrated WalletConnect v2 so players could connect any of 100+ supported wallets',
+  //     'Kept the crypto stuff out of the way so people who aren\'t into blockchain could just play poker',
+  //   ],
+  //   links: { github: '#' },
+  // },
 ];
