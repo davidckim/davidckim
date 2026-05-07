@@ -1,0 +1,60 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../components/Hero.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+import ExperienceCard from '../components/ExperienceCard.astro';
+import SkillGroup from '../components/SkillGroup.astro';
+import ContactCTA from '../components/ContactCTA.astro';
+import { projects } from '../data/projects';
+import { experiences } from '../data/experience';
+import { skillGroups } from '../data/skills';
+---
+
+<Layout title="David Kim — Senior Software Engineer">
+  <Navbar />
+  <main class="flex-1">
+    <Hero />
+
+    <section class="py-16 border-t border-gray-200">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="flex items-center justify-between mb-10">
+          <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Experience</h2>
+          <a href="/experience" class="text-sm text-indigo-600 hover:text-indigo-700 font-medium transition-colors">
+            View all →
+          </a>
+        </div>
+        <div class="space-y-10">
+          {experiences.slice(0, 2).map((exp) => <ExperienceCard experience={exp} />)}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 border-t border-gray-200">
+      <div class="max-w-4xl mx-auto px-6">
+        <div class="flex items-center justify-between mb-10">
+          <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Projects</h2>
+          <a href="/projects" class="text-sm text-indigo-600 hover:text-indigo-700 font-medium transition-colors">
+            View all →
+          </a>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-4">
+          {projects.slice(0, 2).map((project) => <ProjectCard project={project} />)}
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 border-t border-gray-200">
+      <div class="max-w-4xl mx-auto px-6">
+        <h2 class="text-xs font-semibold text-gray-400 uppercase tracking-wider mb-10">Skills</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {skillGroups.map((group) => <SkillGroup group={group} />)}
+        </div>
+      </div>
+    </section>
+
+    <ContactCTA />
+  </main>
+  <Footer />
+</Layout>
