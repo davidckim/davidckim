@@ -10,11 +10,11 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     category: 'Front-End',
-    skills: ['React', 'Next.js', 'Astro', 'React Native', 'Redux Toolkit', 'Redux-Saga', 'Tailwind CSS', 'Sass'],
+    skills: ['React', 'Next.js', 'Astro', 'React Native', 'Redux Toolkit', 'Redux-Saga', 'Tailwind CSS', 'Shadcn/ui', 'Sass'],
   },
   {
     category: 'Back-End & APIs',
-    skills: ['Node.js', 'GraphQL', 'REST APIs', 'Rails', 'Apollo'],
+    skills: ['Node.js', 'Express', 'PostgreSQL', 'GraphQL', 'REST APIs', 'Rails', 'Apollo'],
   },
   {
     category: 'Infrastructure',
