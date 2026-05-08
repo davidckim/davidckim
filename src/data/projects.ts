@@ -20,7 +20,7 @@ export const projects: Project[] = [
       'The buy-check API sends the game data and taste description to gpt-4o-mini and gets back a structured verdict with a headline, reasoning bullets, and a price take',
       'Rate limited at 10 req/IP/hour with Upstash and cached Steam and Reddit responses in Next.js to keep API costs reasonable',
     ],
-    links: { github: '#', demo: '#' },
+    links: { github: 'https://github.com/davidckim/worththedownload', demo: 'https://worththedownload.com/' },
   },
   {
     name: 'Avocado Finance',
@@ -32,7 +32,7 @@ export const projects: Project[] = [
       'Integrated Plaid, Yodlee, and Finicity for bank linking and transaction data',
       'Ran the product side too: user interviews, roadmap, launch, and early growth',
     ],
-    links: { github: '#', demo: '#' },
+    links: { github: '', demo: '' },
   },
   // {
   //   name: 'Blockchain Poker',
